@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('scm') {
             steps {
-                git 'https://github.com/suripatla/qt-gol.git'        
+                git branch: 'qa', url:'https://github.com/suripatla/qt-gol.git'        
             }
         }
         stage('build') {
